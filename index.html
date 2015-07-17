@@ -245,6 +245,7 @@
         activetab_bg: '#B5AC5F', // background color for active tabs in this group
         inactive_bg: '#E0D78C', // background color for inactive tabs in this group
         active_border_color: '#9C905C', // border color for active tabs heads in this group
+        slidespeed:'slow',// compatible with jQuery duration for .slideDown and .slideUp
         active_content_border_color: '#9C905C' // border color for active tabs contect in this group so that it matches the tab head border
     });
 </code></pre>
@@ -284,6 +285,7 @@ Email: <a href="mailto:michael.kabugi@gmail.com">michael.kabugi@gmail.com</a></p
             fit: true, // 100% fit in a container
             closed: 'accordion', // Start closed if in accordion view
             tabidentify: 'hor_1', // The tab groups identifier
+            slidespeed:'slow',// compatible with jQuery duration for .slideDown and .slideUp
             activate: function (event) { // Callback function if tab is switched
                 var $tab = $(this);
                 var $info = $('#nested-tabInfo');
